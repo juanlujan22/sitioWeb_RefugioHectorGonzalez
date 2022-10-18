@@ -1,0 +1,397 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    color: whitesmoke;
+    background-color: #25300f;
+}
+
+
+section h1 {
+    color: rgb(220,196,4);
+    font-size: 67px;
+    font-family: 'Comforter', cursive;
+    text-align: center;
+}    
+
+section h2 {
+    color: rgb(164,68,28); 
+    font-family: 'EB Garamond', serif;
+    font-size: 30px;   
+}   
+
+section h3 {
+    color: rgb(164,68,28);
+    font-family: 'EB Garamond', serif;
+    font-size: 25px;
+}
+
+section p {
+    color: rgb(31, 11, 11);
+    font-family: helvetica, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight:lighter;
+    font-size: 16px;
+}
+
+table tr th {
+    background-color: khaki;
+    color: rgb(164,68,28);
+}
+
+table tr {
+    border: 2px solid;
+    
+}
+
+table tr td {
+    border: 2px solid;
+}
+
+table{
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.form{
+    font-size: 20px;
+    font-family: Helvetica, sans-serif;
+}
+
+
+.videos{
+    width: 560px;
+}
+
+
+.imagenNormal{
+    width: 700px;
+}
+
+.textoParrafo{
+    font-size: 16px;
+    font-style:normal; 
+    font-weight:normal; 
+    font-family: helvetica, Tahoma, sans-serif;
+    text-align:center; 
+    text-transform: none ; 
+    line-height: 2 ;
+    text-decoration:none ; 
+    color: whitesmoke;
+    padding: 60px;
+}
+
+.titulo{
+    margin: 10px;
+    padding: 15px;
+    left: 2px;
+}
+
+.centrarTexto{
+    text-align: center;
+}
+
+.textoIzquierda{
+    text-align: left;
+}
+
+.textoDerecha{
+    text-align: right;
+}
+
+.sangriaDeLista{
+    list-style-position: inside;
+}
+
+
+
+/*-------body-------*/
+
+.body--box{
+    background-color: #25300f; 
+      
+}
+
+
+/*header*/
+
+
+.header__nav--box {
+    display: flex;
+    z-index: 3;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background: rgb(65,59,4);
+    background: linear-gradient(90deg, rgba(65,59,4,1) 22%, rgba(204,200,28,1) 100%);
+    justify-content: center;
+}
+
+/*    barra de navegacion    */
+
+.barraNavegacion {
+    background: rgb(65,59,4);
+    background: linear-gradient(90deg, rgba(65,59,4,1) 22%, rgba(204,200,28,1) 100%);
+} 
+
+.nav__div--box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+   width: 100px;
+   height: 80px;
+   padding: 0px;
+}
+
+.redesIcons{
+    width: 45px;
+    display: inline-block;
+    top: 40px;
+}
+
+
+
+.menuNav > ul {
+    list-style: none;
+    color:rgb(220,196,4)
+}
+
+.menu { 
+    z-index: 5;
+    color:rgb(220,196,4);
+    font-family: helvetica, Tahoma, sans-serif;
+    text-align: center;
+    list-style: none;
+    font-size: 1px ;
+}
+
+.menu > li{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    list-style: none;
+    font-size: 16px ;
+    padding: 15px 10px;
+}
+
+.menu > li > a{
+    display: block;
+    padding: 10px 15px;
+    color:#201710;
+    font-family: Helvetica, Tahoma, sans-serif;
+    text-decoration: none;
+    list-style: none; 
+    text-align:center; 
+    font-size: 16px; 
+}
+
+
+.menu li ul li a:hover{
+    color: orange;
+}
+
+.subMenu{
+    z-index: 10;
+    background-color: grey;
+    width: 150%;
+    display: none;
+}
+
+.subMenu li a {
+    z-index: 20;
+    display: block;
+    padding: 10px;
+    color:rgb(220,196,4);
+}
+
+.menu li:hover .subMenu{
+    display: block;
+    z-index: 20;
+}
+
+.bg--yellow{
+    background-color: rgba(204,200,28,1);
+}
+
+/*   main   */
+
+.section__carousel{
+    padding: 5px 15px 5px 15px;
+    height: 85vh;
+    width: 85vh;
+}
+
+.main{
+    position: relative;
+    grid-area: 2 / 1 / 21 / 10;
+
+}
+
+.sectionPrincipal{
+    z-index: 3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionRedes{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.tituloPrincipal{
+    transform:scale(0.9);
+    top: 106px;
+    position: absolute;
+    z-index: 5;
+}
+
+.stroke{
+    -webkit-text-fill-color: rgb(230,196,4);
+    -webkit-text-stroke: 0.6px black;
+}
+
+
+.whatsapp{
+    width: 100px; 
+    transition: width 1s;
+    position: absolute;
+    z-index: 4;
+    display: flex;
+}
+
+.whatsapp:hover {
+    width: 150px;
+}
+
+
+/*Cards Testimonion*/
+
+.card{
+    align-items: center;
+}
+
+.section-dos__card--bg{
+   background-color:  rgba(204,200,28,1); /*marron: rgb(220,196,4);    verde: #25300f;    amarillo:rgb(220,196,4);*/
+}
+
+
+
+/* Seccion de Testimonios */
+
+.tituloTestimonio{
+    padding: 10px;
+    color: rgb(164,68,28);
+}
+
+.imgCliente{
+    width: 130px;
+    padding: 10px;
+    margin: 10px;
+    
+}
+
+/*Seccion Footer*/
+
+.footer{
+    color:rgb(220,196,4);
+    border: solid white 1px;
+    top: 1850px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    grid-area: 21 / 1 / 22 / 10;
+    background: rgb(65,59,4);
+    background: linear-gradient(90deg, rgba(65,70,4,1) 22%, rgba(230,200,28,1) 100%);
+}
+
+
+
+
+/*-------Servicio-------*/
+
+.sectionHabitaciones{
+    
+    padding: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.sectionCaracteristicasRefugio{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 20px;
+
+}
+
+
+/*-------comidas-------*/
+
+.sectionComidas {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.menus {
+    padding: 20px;
+    margin: 10px;
+    
+}
+
+/*-------imagenes-------*/
+
+.sectionImagenes{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.sectionFoto{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+}
+
+/*-------Mapas-------*/
+
+.sectionMapas{
+    display: grid;
+    flex-flow: column nowrap;
+    justify-items: center;
+    font-size: 16px;
+    font-style:normal; 
+    font-weight:normal; 
+    font-family: helvetica, Tahoma, sans-serif;
+    text-align:center; 
+    line-height: 2 ;
+}
+
+@media only screen and (max-width:319px) {
+    
+    
+    .sectionRedes{
+        display:none !important;
+    
+    }
+   
+}
